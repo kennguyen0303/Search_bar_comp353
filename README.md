@@ -9,6 +9,6 @@
         The code for creating and inserting table is in <strong>database_create_and_insert.sql</strong> <br>
         <strong>2. Setup Xampp</strong><br>
         Please copy the whole folder/repository into your xampp repository.
-        In my case: <strong>C:\xampp\htdocs and my folder name is "ken_project2".</strong>
+        In my case: <strong>C:\xampp\htdocs</strong> and my folder name is "ken_project2".
         To run the code, the file should be visible at: <strong>"http://localhost/ken_project2/"</strong>
     </p>
