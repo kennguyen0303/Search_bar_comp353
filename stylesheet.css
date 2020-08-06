@@ -9,3 +9,14 @@
 .a_post > .job_title:hover{
     text-decoration: underline;
 }
+
+.ApplyButton{
+    margin-left: 15rem;
+    margin-top: 0rem;
+}
+
+/* a job */
+.a_job{
+    margin: 2rem;
+    padding: 2rem;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Ajax for sorting -->
+<script>
+  
+    function sortingBy(sortValue) {
+      alert(sortValue);
+      if (sortValue == "default") {
+        alert("1");
+        return;
+      } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            alert("2");
+            document.getElementById("print").innerHTML = "<h1>hello</h1>";
+            
+          }
+        };
+        alert("3");
+        xmlhttp.open("GET", "action.php?jobName=c"+"&sort_option="+sortValue, true);
+        xmlhttp.send();
+      }
+    }
+      function hello(){
+        alert("hello");
+      }
+    </script>
+</head>
+<body>
+    "Sorted by:".
+  "<select class="sort_option" onchange="sortingBy(this.value)">
+  "<option value="default"></option>".
+  "<option value="newest">Newest</option>".
+  "<option value="N#applicant">Descending by n# applicant</option>".
+  "<option value="N#position">Descending by N# position</option>".
+  "</select>";
+    <div id="print"></div>
+</body>
+</html>
