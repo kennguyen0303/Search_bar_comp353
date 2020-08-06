@@ -1,0 +1,11 @@
+.a_post{
+    border: 1px solid;
+    margin: 2rem;
+    max-width: 12rem;
+}
+.a_post > .job_title{
+    font-weight: bold;
+}
+.a_post > .job_title:hover{
+    text-decoration: underline;
+}
